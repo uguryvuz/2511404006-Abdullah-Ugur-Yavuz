@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 30px auto;
+    background-color: white;
+    border: 2px solid darkblue;
+    padding-bottom: 20px;
+}
+
+.header {
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px dashed red;
+}
+
+.header h2 {
+    margin-top: 0;
+}
+
+.nav a:link, .nav a:visited {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10%;
+    margin: 5px;
+    display: inline-block;
+}
+
+.nav a:hover {
+    background-color: orange;
+}
+
+.nav a:active {
+    background-color: black;
+}
+
+.content {
+    float: left;
+    width: 65%;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.sidebar {
+    float: right;
+    width: 28%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 2px dotted darkblue;
+    margin: 15px;
+    min-height: auto;
+    box-sizing: border-box;
+}
+
+.sidebar h3 {
+    color: darkblue;
+}
+
+.sidebar ul {
+    list-style-type: square; 
+    padding-left: 20px;
+}
+
+.sidebar a:link, .sidebar a:visited {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: red;
+}
+
+.social-links a:link, .social-links a:visited {
+    display: block;
+    margin-bottom: 10px;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: green;
+}
+
+@media (max-width: 768px) {
+    .content, .sidebar {
+        float: none;
+        width: 100%;
+        border-left: none;
+        border-top: 3px dotted darkblue;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 95%;
+    }
+}
+
+.content a:link, .content a:visited {
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.content a:hover {
+    color: red;
+}
+
+.nav a.active {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    border: 1px solid darkblue;
+}
